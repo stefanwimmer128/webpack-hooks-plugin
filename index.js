@@ -4,7 +4,7 @@ class WebpackHooksPlugin {
     }
     
     apply(compiler) {
-        Object.keys(this.hooks).forEach(key =>
+        Object.keys(this.hooks).forEach(key => {
             compiler.hooks[key].tap("WebpackHooksPlugin_" + key, this.hooks[key]);
         });
     }
