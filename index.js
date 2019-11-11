@@ -1,4 +1,4 @@
-class WebpackHooksPlugin {
+module.exports = class WebpackHooksPlugin {
     constructor(hooks) {
         this.hooks = hooks;
     }
